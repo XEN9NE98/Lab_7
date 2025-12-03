@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'database.php';
 
 if (!isset($_SESSION['matric'])) {
     header("Location: login.php");

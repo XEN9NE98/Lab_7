@@ -11,10 +11,10 @@
     <h1>Login Page</h1>
     <form action="" method="post">
         <label for="matric">Matric:</label>
-        <input type="text" id="matric" name="matric" required><br><br>
+        <input type="text" id="matric" name="matric" required><br>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required><br>
 
         <button type="submit" name="login">Login</button>
     </form>

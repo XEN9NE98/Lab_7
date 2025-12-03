@@ -50,8 +50,8 @@ $result = $conn->query($sql);
         }
         ?>
     </table>
-    <div style="text-align: center; margin-top: 20px;">
-            <a href="logout.php" style="background: red; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">Logout</a>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="logout.php" class="logout-btn">Logout</a>
         </div>
     </div>
 </body>

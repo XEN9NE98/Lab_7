@@ -42,22 +42,21 @@ if (isset($_POST['update'])) {
 <body>
     <div class="wrapper">
         <h1>Update User</h1>
-    </div>
     <form action="" method="post">
         <label for="matric">Matric:</label>
-        <input type="text" value="<?php echo $row['matric']; ?>" name="matric" readonly><br><br>
+        <input type="text" value="<?php echo $row['matric']; ?>" name="matric" readonly><br>
 
         <label for="name">Name:</label>
-        <input type="text" value="<?php echo $row['name']; ?>" name="name" required><br><br>
+        <input type="text" value="<?php echo $row['name']; ?>" name="name" required><br>
 
         <label for="role">Access Level:</label>
         <select name="role" required>
-            <option value="student" <?php if ($row['role'] == 'student') echo 'selected'; ?>>Student</option>
-            <option value="teacher" <?php if ($row['role'] == 'teacher') echo 'selected'; ?>>Teacher</option>
+            <option value="Student" <?php if ($row['role'] == 'Student') echo 'selected'; ?>>Student</option>
+            <option value="Teacher" <?php if ($row['role'] == 'Teacher') echo 'selected'; ?>>Teacher</option>
         </select><br><br>
-
         <button type="submit" name="update">Update</button>
         <a href="display.php">Cancel</a>
     </form>
+    </div>
 </body>
 </html>

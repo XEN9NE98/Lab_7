@@ -24,6 +24,7 @@
         </select><br><br>
 
         <button type="submit" name="submit">Submit</button>
+        <p>Already have an account? <a href="login.php">Login</a></p>
     </form>
 </body>
 

@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Register Form</h1>
-    <form action="register.php" method="post">
+    <form action="" method="post">
         <label for="matric">Matric:</label>
         <input type="text" id="matric" name="matric" required><br><br>
 
@@ -23,7 +23,7 @@
             <option value="teacher">Teacher</option>
         </select><br><br>
 
-        <button type="submit">Submit</button>
+        <button type="submit" name="submit">Submit</button>
     </form>
 </body>
 

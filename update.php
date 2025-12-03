@@ -37,9 +37,12 @@ if (isset($_POST['update'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update User</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Update User</h1>
+    <div class="wrapper">
+        <h1>Update User</h1>
+    </div>
     <form action="" method="post">
         <label for="matric">Matric:</label>
         <input type="text" value="<?php echo $row['matric']; ?>" name="matric" readonly><br><br>

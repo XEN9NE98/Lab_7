@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrapper">
     <h1>Login Page</h1>
     <form action="" method="post">
         <label for="matric">Matric:</label>
@@ -17,6 +19,7 @@
         <button type="submit" name="login">Login</button>
     </form>
     <p>Don't have an account? <a href="register_form.php">Register here</a></p>
+    </div>
 </body>
 </html>
 

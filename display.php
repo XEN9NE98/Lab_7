@@ -17,23 +17,19 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User List</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>User List</h1>
-    <table>
-        <tr>
-            <th>Matric</th>
-            <th>Name</th>
-            <th>Level</th>
-            <th>Action</th>
-        </tr>
+    <div class="wrapper">
+        <h1>User List</h1>
+
+        <table>
+            <tr>
+                <th>Matric</th>
+                <th>Name</th>
+                <th>Level</th>
+                <th colspan="2">Action</th>
+            </tr>
         <?php
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
@@ -42,15 +38,21 @@ $result = $conn->query($sql);
                         <td>" . $row['name'] . "</td>
                         <td>" . $row['role'] . "</td>
                         <td>
-                            <a href='update.php?matric=" . $row['matric'] . "'>Update</a> | 
+                            <a href='update.php?matric=" . $row['matric'] . "'>Update</a>
+                        </td>
+                        <td>
                             <a href='delete.php?matric=" . $row['matric'] . "'>Delete</a>
                         </td>
                       </tr>";
             }
         } else {
-            echo "<tr><td colspan='4'>No users found</td></tr>";
+            echo "<tr><td colspan='5'>No users found</td></tr>";
         }
         ?>
     </table>
+    <div style="text-align: center; margin-top: 20px;">
+            <a href="logout.php" style="background: red; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">Logout</a>
+        </div>
+    </div>
 </body>
 </html>

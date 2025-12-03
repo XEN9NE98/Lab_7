@@ -41,7 +41,7 @@ $result = $conn->query($sql);
                         <td>" . $row['matric'] . "</td>
                         <td>" . $row['name'] . "</td>
                         <td>" . $row['role'] . "</td>
-                        <td><a href='edit_user.php?matric=" . $row['matric'] . "'>Edit</a></td>
+                        <td><a href='edit.php?matric=" . $row['matric'] . "'>Edit</a></td>
                       </tr>";
                 echo "<td>
                         <a href='update.php?matric=" . $row['matric'] . "'>Update</a> | 
